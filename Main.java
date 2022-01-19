@@ -1,13 +1,8 @@
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        AppData appData = new AppData();
-        appData.load("lesson5.txt");
+        UserInterfaceView userInterfaceView = new UserInterfaceView();
 
-        System.out.println(Arrays.toString(appData.getHeader()));
-        System.out.println(Arrays.deepToString(appData.getData()));
-
-        appData.save("lesson5.txt");
+        userInterfaceView.runInterface();
     }
 }
